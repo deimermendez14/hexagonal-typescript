@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { UserFinder } from "../../application/search-user/user-finder";
+import { UserFinder } from "../../application/find-user/user-finder";
 
 export class UserFindController {
   constructor(private readonly userFinder: UserFinder) {}

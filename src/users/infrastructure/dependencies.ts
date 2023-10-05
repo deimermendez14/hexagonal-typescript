@@ -1,5 +1,5 @@
 import { UserCreator } from "../application/create-user/user-creator";
-import { UserFinder } from "../application/search-user/user-finder";
+import { UserFinder } from "../application/find-user/user-finder";
 import { UserCreateController } from "./controllers/user-create.controller";
 import { UserFindController } from "./controllers/user-find.controller";
 import { MongoUserRepository } from "./repositories/mongo-user-repository";
