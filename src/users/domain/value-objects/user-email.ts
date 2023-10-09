@@ -1,3 +1,3 @@
-import { StringValueObject } from "src/shared/value-object/domain/string-value-object";
+import { StringValueObject } from "src/shared/domain/value-objects/string-value-object";
 
 export class UserEmail extends StringValueObject {}
