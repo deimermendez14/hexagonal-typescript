@@ -1,3 +1,5 @@
+import { UserId } from "src/users/domain/value-objects/user-id";
+
 import { User } from "../../domain/entities/user";
 import { UserRepository } from "../../domain/repositories/user-repository";
 import { USERS } from "./postgres-user-repository";
@@ -14,7 +16,7 @@ export class MongoUserRepository implements UserRepository {
     USERS.push(newUser);
   }
 
-  async getById(userId: string): Promise<User | null> {
+  async getById(userId: UserId): Promise<User | null> {
     const user = USERS.find(user => user.id === userId);
 
     return user ? new User(user.id, user.email) : null;
