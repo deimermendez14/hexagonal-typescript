@@ -1,10 +1,10 @@
 import { User } from "../../domain/entities/user";
-import { UserRepository } from "../../domain/repositories/user-repository";
+import { UserGet } from "../../domain/repositories/user-repository";
 
 export class UserFinder {
-  constructor(private readonly userRepository: UserRepository) {}
+  constructor(private readonly userGet: UserGet) {}
   async run(): Promise<User[]> {
-    const users = await this.userRepository.get();
+    const users = await this.userGet.get();
 
     return users;
   }
