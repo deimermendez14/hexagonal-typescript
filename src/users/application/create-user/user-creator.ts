@@ -1,8 +1,7 @@
-import { UserEmail } from "src/users/domain/value-objects/user-email";
-import { UserId } from "src/users/domain/value-objects/user-id";
-
 import { User } from "../../domain/entities/user";
 import { UserSaver } from "../../domain/repositories/user-repository";
+import { UserEmail } from "../../domain/value-objects/user-email";
+import { UserId } from "../../domain/value-objects/user-id";
 import { createUser } from "./dto/create-user.dto";
 
 export class UserCreator {
